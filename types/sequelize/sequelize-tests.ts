@@ -1192,6 +1192,15 @@ new Sequelize( 'sequelize', null, null, {
     }
 } );
 
+new Sequelize({
+    database: 'db',
+    username: 'user',
+    password: 'pw',
+    dialect : '',
+    port : 99999,
+    pool : {}
+} );
+ 
 s.model( 'Project' );
 s.models['Project'];
 s.define( 'Project', {
