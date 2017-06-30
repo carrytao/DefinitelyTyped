@@ -5505,6 +5505,15 @@ declare namespace sequelize {
          * @param options See above for possible options
          */
         new (uri: string, options?: Options): Sequelize;
+        
+        /**
+         * Instantiate sequelize with Options
+         * @name Sequelize
+         * @constructor
+         *
+         * @param options See above for possible options
+         */
+        new (options: Options): Sequelize;
 
         /**
          * Provide access to continuation-local-storage (http://docs.sequelizejs.com/en/latest/api/sequelize/#transactionoptions-promise)
